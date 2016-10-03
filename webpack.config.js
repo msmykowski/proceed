@@ -1,9 +1,10 @@
 module.exports = {
   entry: "./app/javascripts/main.js",
   output: {
-      path: __dirname,
-      filename: "static/bundle.js"
+      path: require('path').resolve(__dirname, 'static/'),
+      filename: "bundle.js"
   },
+  devServer:{contentBase: 'static'},
   module: {
     loaders: [
         { test: /\.css$/, loader: "style!css" },
