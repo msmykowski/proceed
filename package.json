@@ -2,9 +2,10 @@
   "name": "proceed",
   "version": "1.0.0",
   "description": "A lightweight react bootstrap for single page applications",
+  "repository": "https://github.com/msmykowski/proceed",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --inline --hot",
+    "dev": "./node_modules/gulp/bin/gulp.js jasmine | webpack-dev-server --progress --inline --hot",
     "build": "webpack -p"
   },
   "author": "",
