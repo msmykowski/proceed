@@ -71,7 +71,7 @@
 	      return React.createElement(
 	        'div',
 	        null,
-	        'Hello World'
+	        'Hello World!!!!'
 	      );
 	    }
 	  }]);
@@ -81,8 +81,7 @@
 
 	module.exports = Application;
 
-	var renderIntoDom = __webpack_require__(158);
-	renderIntoDom(Application);
+	__webpack_require__(158)(Application);
 
 /***/ },
 /* 1 */
@@ -19806,8 +19805,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./application.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./application.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./application.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./application.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -19825,7 +19824,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: red;\n}", ""]);
+	exports.push([module.id, "body {\n  background: blue;\n}", ""]);
 
 	// exports
 

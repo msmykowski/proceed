@@ -1,8 +1,8 @@
 module.exports = {
-  entry: "./javascripts/main.js",
+  entry: "./app/javascripts/main.js",
   output: {
       path: __dirname,
-      filename: "bundle.js"
+      filename: "static/bundle.js"
   },
   module: {
       loaders: [
@@ -14,7 +14,8 @@ module.exports = {
             query: {
               presets: [
                 'es2015', 
-                'react'
+                'react',
+                'react-hmre'
               ]
             }
           }
