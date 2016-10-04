@@ -20,10 +20,10 @@ By default the test server will listen on port :8888
 
 Tasks:
 
--gulp - runs gulp lint, gulp spec in sequence
--gulp lint - runs eslint
--gulp spec - runs the unit tests in a headless browser from the CLI
--gulp jasmine - starts the jasmine test server (default port is 8888)
+- gulp - runs gulp lint, gulp spec in sequence
+- gulp lint - runs eslint
+- gulp spec - runs the unit tests in a headless browser from the CLI
+- gulp jasmine - starts the jasmine test server (default port is 8888)
 
 ** it is good practice to run gulp before commiting
 
