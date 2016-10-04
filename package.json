@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/gulp/bin/gulp.js jasmine | webpack-dev-server --progress --inline --hot",
-    "build": "webpack -p"
+    "build": "NODE_ENV=production webpack -p"
   },
   "author": "",
   "license": "ISC",
