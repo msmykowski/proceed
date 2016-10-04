@@ -10,7 +10,7 @@ beforeAll(() => {
   };
 
   Object.keys(globals).forEach((glob) => global[glob] = globals[glob]);
-  spyOn(require('../app/javascripts/renderIntoDom'), 'renderIntoDom');  
+  spyOn(require('../app/javascripts/initialize'), 'initialize');  
 });
 
 afterAll(() => {
