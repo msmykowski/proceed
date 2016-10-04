@@ -1,5 +1,5 @@
 # proceed
-A lightweight boilerplate to quickly get a react project up and running.
+A minimal boilerplate to quickly get React projects up and running.
 
 Getting Started:
 
