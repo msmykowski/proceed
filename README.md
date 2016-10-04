@@ -30,9 +30,3 @@ Deploying:
 
 Run ```npm run build``` to compile your static assets.  Your assets will build into the /static directory.
 
-
-
-
-
-By default the development server will run on port 8080 and the tests will run on port 8888
-
