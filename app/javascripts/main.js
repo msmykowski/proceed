@@ -1,12 +1,17 @@
 const React = require('react');
+const {useStore} = require('p-flux');
 
-class Main extends React.Component {
-  render() {
-    const helloWorld = "hello world";
-    return (<div>{helloWorld}</div>);
-  }
+const {withRouter, initialize} = require('./setup');
+
+function Main ({store}) {
+  return <div>{store.helloWorld}</div>;
 }
 
-module.exports = Main;
+const MainWithStore = useStore(withRouter(Main), {
+    store: require('./store'),
+    dispatcherHandlers: []
+  });
 
-require('./initialize').initialize(Main);
+initialize(MainWithStore);
+
+module.exports = MainWithStore;

@@ -37,6 +37,8 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
+    "grapnel": "^0.6.4",
+    "p-flux": "^1.1.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   }
